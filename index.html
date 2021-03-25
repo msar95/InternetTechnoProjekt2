@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icon stylesheet, da ich sonst keine Bilder ohne hässlichen alpha layer verwenden kann (footer) -->
+
     <title>MedicalPlus</title>
 </head>
 <style>
@@ -69,6 +72,18 @@
     nav {
         margin: 5em auto;
     }
+    footer ul li{
+        list-style: none;
+        display: inline;
+        padding: 0 5em;
+    }
+    footer ul{
+        margin: 3em auto .5em auto;
+    }
+    .infos{
+        text-align: center;
+    }
+
 </style>
 
 <body>
@@ -247,24 +262,39 @@
     </section>
 
     <footer>
-        <table>
-            <tr>
-                <td>Name:</td>
-                <td>MedicalPlus</td>
-            </tr>
-            <tr>
-                <td>Anschrift: </td>
-                <td>Olof-Palme-Straße 9<br>
-                    81829 München<br>
-                    Deutschland</td>
-            </tr>
-        </table>
-        <ul>
-            <li><a href="https://www.brainlab.com/de/informationen-zum-unternehmen/">Impressum</a></li>
-            <li><a href="mailto:>MedicalPlus@gmail.com">Write us</a></li>
-            <li><a href="tel:+">Telefon: +49 89 99 15 68 0</a>
-            <li><a href="fax:+">Fax: +49 89 99 15 68 5033</a></li>
-        </ul>
+        <section class="details">
+            <div class="row">
+                <div class="col1">
+                    <span id="icon" class="fa fa-map-marker"></span>
+                    <span>Europastraße 55, Business Park, </br>
+                        78467, Konstanz
+                    </span>
+                </div>
+
+                <div class="col2">
+                    <span id="icon" class="fa fa-phone"></span>
+                    <span>Telefon: 07931/ 48421730</span>
+                </div>
+
+                <div class="col3">
+                    <span id="icon" class="fa fa-envelope"></span>
+                    <span>info@medical-plus.com</span>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="infos">
+            <p>© All rights reserved - AndreasAndMarius.</p>
+            <ul>
+                <li><a href="http://twitter.com" class="fa fa-twitter">Twitter</a></li>
+                <li><a href="http://facebook.com" class="fa fa-facebook">FaceBook</a></li>
+                <li><a href="http://github.com" class="fa fa-github">GitHub</a></li>
+            </ul>
+
+        </section>
+
     </footer>
 
 </body>
