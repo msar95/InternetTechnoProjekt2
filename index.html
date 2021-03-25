@@ -48,7 +48,7 @@
     }
 
     header {
-        margin: 5em 0 0 0;
+        margin: 1em 0 0 0;
         text-align: center;
     }
 
@@ -60,23 +60,43 @@
         text-decoration: none;
         color: grey;
     }
+
+    nav ul li {
+        display: inline;
+        margin: 0 5em 0 5em;
+    }
+
+    nav {
+        margin: 5em auto;
+    }
 </style>
 
 <body>
     <div class="hero-bg">
-        <section class="top">
-            <header>
-                <a href="https://de.wikipedia.org/wiki/Private_Krankenzusatzversicherung">Was ist eine
-                    Krankenzusatzversicherung?</a>
-            </header>
-
-            <img src="/img/logo.png" alt="shows logo of MedicalPlus" id="logo">
-            <h1><b>Medical <span>Plus</span></b></h1>
+        <header>
+            <div>
+                <img src="https://lh3.googleusercontent.com/proxy/6QjJKYCqbS52c5pI0YGCXdli0HEOUOTifHXdqiJY7Z7uvtlYhvB8NJdSrPzUbEHKWwHptn9WWfOlukqoxmgMmIOL3Fd-aD8"
+                    alt="shows logo of MedicalPlus" id="logo">
+                <h1><b>Medical <span>Plus</span></b></h1>
+            </div>
 
             <div class="banner">
                 <p>Der beste Schutz, wenn es um Ihre Gesundheit geht</p>
             </div>
-        </section>
+
+
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Über uns</li>
+                    <li>Leistungen</li>
+                    <li>Kontakt</li>
+                    <li>Karriere</li>
+                </ul>
+
+            </nav>
+
+        </header>
     </div>
 
 
@@ -165,22 +185,23 @@
                 <h3>Ambulante Zusatzversicherung</h3>
                 <img src="http://www.nobilitas.de/fileadmin/_processed_/csm_Krankenzusatzversicherung_2395fade9b.jpg"
                     alt="shows a shot of FiberTracking on display">
-                    <ul class="sectionU3">
-                        <li>Privatpatientenstatus auch beim Hausarzt</li>
-                        <li>Fängt da an wo die gesetztliche Krankenversicherung aufhört</li>
-                        <li>Reduziert die Kosten für Arzneimittel, Brille, Vorsorge, Medikamente und Naturheilbehandlung</li>
-                    </ul>
+                <ul class="sectionU3">
+                    <li>Privatpatientenstatus auch beim Hausarzt</li>
+                    <li>Fängt da an wo die gesetztliche Krankenversicherung aufhört</li>
+                    <li>Reduziert die Kosten für Arzneimittel, Brille, Vorsorge, Medikamente und Naturheilbehandlung
+                    </li>
+                </ul>
             </div>
-           <hr>
+            <hr>
             <div class="leistung-3">
                 <h3>Zahnzusatzversicherung</h3>
                 <img src="https://www.inter.de/fileadmin/_processed_/e/d/csm_ambulante-zusatzversicherung-visual_ea2b617e8c.jpg"
                     alt="shows a shot of FiberTracking on display">
-                    <ul class="sectionU3">
-                        <li>Hilft Ihnen auch im hohen ALter noch strahlend zu lächeln</li>
-                        <li>Zahnersatz komplett ohne Zuzahlung</li>
-                        <li>Übernimmt sämtliche Kosten der Prophylaxe</li>
-                    </ul>    
+                <ul class="sectionU3">
+                    <li>Hilft Ihnen auch im hohen ALter noch strahlend zu lächeln</li>
+                    <li>Zahnersatz komplett ohne Zuzahlung</li>
+                    <li>Übernimmt sämtliche Kosten der Prophylaxe</li>
+                </ul>
             </div>
             <hr>
 
@@ -210,8 +231,9 @@
     <section class="news-dash">
         <hr>
         <div class="form-container">
-            <img src="/img/news-dash.jpg" alt="Picture of Insurance News">
-            <form action="">
+            <img src="https://www.brashearsinsurance.com/wp-content/uploads/2017/09/general-liability-insurance-2-1024x647.jpg"
+                alt="Picture of 'Are you Covered?'">
+            <form>
                 <h3>Melden Sie sich für unseren Newsletter an</h3>
                 <label for="city">Wo wohnen Sie?</label>
                 <input type="text" name="city" id="city" placeholder="Wohnort">
