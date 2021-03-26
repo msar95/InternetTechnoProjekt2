@@ -16,12 +16,9 @@
         color: rgb(70, 70, 70);
     }
 
-    table {
-        border-collapse: collapse;
-    }
-
-    table tr, td, th {
+    table ,td, th {
         border: solid 2px rgb(46, 45, 44);
+        border-collapse: collapse;
         padding: 0.5em;
         text-align: center;
     }
@@ -43,12 +40,6 @@
     #logo {
         margin: 2em 0 0 2em;
         width: 5em;
-    }
-
-    .top h1 {
-        position: absolute;
-        top: 6em;
-        left: 6em;
     }
 
     header {
@@ -104,11 +95,11 @@
 
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Über uns</li>
-                    <li>Leistungen</li>
-                    <li>Kontakt</li>
-                    <li>Karriere</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#whoweare">Über uns</a></li>
+                    <li><a href="#leistungen">Leistungen</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Karriere</a></li>
                 </ul>
 
             </nav>
@@ -118,7 +109,7 @@
 
 
     <main>
-        <section class="whoweare">
+        <section class="whoweare" id="whoweare">
             <div>
                 <div class="heading">
                     <h2>Wer wir sind?</h2>
@@ -187,7 +178,7 @@
         </section>
 
 
-        <section class="leistungen">
+        <section class="leistungen" id="leistungen">
             <hr>
             <h2>Unsere Einzel-Versicherungen</h2>
             <div class="leistung-1">
