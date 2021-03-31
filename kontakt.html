@@ -12,7 +12,7 @@
     <div class="hero-bg">
         <header>
             <div>
-                <img src="https://www.pngkey.com/png/full/33-337638_medicine-logo-png-1-medical-logo.png" alt="logo"
+                <img src="img/logo.png" alt="logo"
                     id="logo"></a>
                 <h1><b>Medical <span>Plus</span></b></h1>
             </div>
@@ -21,20 +21,37 @@
                 <p>Der beste Schutz, wenn es um Ihre Gesundheit geht</p>
             </div>
 
-
             <nav>
                 <ul>
-                    <li><a href="/InternetTechnoProjekt2/index.html">Home</a></li>
-                    <li><a href="#whoweare">Über uns</a></li>
-                    <li><a href="#leistungen">Leistungen</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#whoweare">Über uns</a></li>
+                    <li><a href="index.html#leistungen">Leistungen</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
                     <li><a href="#">Karriere</a></li>
                 </ul>
             </nav>
         </header>
     </div>
-
-    
+    <main>
+        <form>
+            <label for="konatkt_name">Name</label>
+            <input type="text" id="kontakt_name" placeholder="Name">
+            <label for="kontakt_email">E-Mail-Adresse</label>
+            <input type="text" id="kontakt_email" placeholder="E-Mail">
+            <label for="kontakt_subject">Betreff</label>
+            <select id="kontakt_subject">
+                <option>        </option>
+                <option>Beratung</option>
+                <option>Preisanfrage</option>
+                <option>Beschwerde</option>
+                <option>Individueller Tarif</option>
+                <option>Anderer Betreff</option>
+            </select>
+            <label for="kontakt_message">Nachricht</label>
+            <input type="text" id="kontakt_message" placeholder="Nachricht">
+            <button id="kontakt_senden" type="send">Senden!</button> 
+        </form>
+    </main>
     <footer>
         <section class="details">
             <div class="row">
