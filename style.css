@@ -112,42 +112,22 @@ ul {
     padding: 0em;
 }
 
-.leistungen{
-    background-color: #eceff4;
-    border-radius: 1em;
-    
-}
-
-.leistungen h2{
-    padding-top: 2em;
-    text-align: center;
-    color: var(--nord10);
-}
 .leistung1{
-    display: table;
+    
+    border-bottom:var(--nord8) dotted 1em;
     padding: 0.5em 4em;
+    background-color: var(--nord7);
     box-sizing: border-box;
-    border-bottom: var(--nord8) dotted 1em;
  }
 
+.leistungen h2{
+    text-align: center;
+}
+
 .leistung1 img {
-    float: left;
     text-align:center;
-    width: 45%;
-    height: 20em;
-    margin: 1em 2em 1.5em 0;
-    border-radius: 2em;
-}
-
-.leistung1 h3{
-    color: var(--nord10);
-}
-
-.leistung1 p{
-    float:left;
-    width: 45%;
-    margin-left: 1em;
-    margin-top: 1em;
+    width: 45em;
+    height: 25em;
 }
 
 footer {
