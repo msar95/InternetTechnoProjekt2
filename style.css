@@ -7,7 +7,29 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: (70,70,70);
+    margin:0;
+    padding:0;
 }
+
+.navbar {
+    background: var(--nord7);
+    padding: 1em;
+    
+}
+
+
+#hero-bg{
+    background: url(http://www.dtf-v.com/images/banner-health2.jpg);
+    margin:0;
+    padding:0;
+
+}
+.top{
+    position:relative;
+    right: 30%;
+}
+
+
 
 table ,td, th {
     border: solid 2px rgb(46, 45, 44);
