@@ -11,9 +11,15 @@
     <title>MedicalPlus</title>
 </head>
 <style>
+    :root{
+        --nord7: #8fBCBB;
+        --nord8: #88C0D0;
+        --nord9: #81A1C1;
+        --nord10:#5E81AC;
+    }
     body {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: rgb(70, 70, 70);
+        color: (70,70,70);
     }
 
     table ,td, th {
@@ -53,7 +59,11 @@
 
     a {
         text-decoration: none;
-        color: grey;
+        color: var(--nord10);
+        font-weight: bold;
+    }
+    a:hover{
+        color: var(--nord9);
     }
 
     nav ul li {
