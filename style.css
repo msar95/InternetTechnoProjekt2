@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 :root{
     --nord7: #8fBCBB;
     --nord8: #acddeb77;
@@ -65,6 +67,10 @@ a:hover{
     color: var(--nord11);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     
+}
+
+.banner p {
+    font-family: 'Caveat', cursive;
 }
 
 .whoweare{
