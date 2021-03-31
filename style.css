@@ -1,9 +1,11 @@
 :root{
     --nord7: #8fBCBB;
-    --nord8: #88C0D0;
-    --nord9: #81A1C1;
+    --nord8: #acddeb77;
+    --nord9: #57585a;
     --nord10:#5E81AC;
+    --nord11: #1f446e;
 }
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: (70,70,70);
@@ -11,31 +13,98 @@ body {
     padding:0;
 }
 
-.navbar {
-    background: var(--nord7);
-    padding: 1em;
-    
-}
-
-
 #hero-bg{
     background: url(http://www.dtf-v.com/images/banner-health2.jpg);
     margin:0;
     padding:0;
-
 }
+
+.navbar {
+    background: var(--nord7);
+    padding: 1em;
+}
+
+header {
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--nord10);
+}
+
+a:hover{
+    color: var(--nord9);
+    font-size: larger;
+}
+
 .top{
     position:relative;
     right: 30%;
+    color: var(--nord9);
 }
 
+.top h1{
+    font-size: 3rem;
+}
 
+.top span{
+    font-style:italic;
+    font-size:110%;
+    color: var(--nord11);
+}
+#logo {
+    margin-top: 2em;
+    width: 10em;
+}
+
+.banner {
+    clear: both;
+    font-size: 1.5rem;
+    color: var(--nord11);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+
+.whoweare{
+    margin: 0.5em 4em;
+    border: solid var(--nord8)0.5px;
+    padding: 0.5em 4em;
+    border-radius: 2em;
+    background-color: var(--nord8);
+}
+
+.heading{
+    color: var(--nord10);
+    font-size: larger;
+}
+
+.Überblick{
+    margin: 1.5em 0 0.5em 8em;
+}
+
+.Überblick h3{
+    color: var(--nord10);
+    font-size: larger;
+}
+hr{
+    float:left;
+}
 
 table ,td, th {
+    color: var(--nord9);
     border: solid 2px rgb(46, 45, 44);
     border-collapse: collapse;
     padding: 0.5em;
     text-align: center;
+}
+
+#t01 tr:nth-child(even) {
+    background-color: var(--nord8);
+}
+    #t01 tr:nth-child(odd) {
+    background-color: #fff;
 }
 
 ul {
@@ -43,36 +112,33 @@ ul {
     padding: 0em;
 }
 
+.leistung1{
+    
+    border-bottom:var(--nord8) dotted 1em;
+    padding: 0.5em 4em;
+    background-color: var(--nord7);
+    box-sizing: border-box;
+ }
+
+.leistungen h2{
+    text-align: center;
+}
+
+.leistung1 img {
+    text-align:center;
+    width: 45em;
+    height: 25em;
+}
+
 footer {
     overflow: hidden;
     margin: 2em 0 6em 0;
 }
 
-img {
-    width: 30em;
-}
 
-#logo {
-    margin: 2em 0 0 2em;
-    width: 5em;
-}
 
-header {
-    margin: 1em 0 0 0;
-    text-align: center;
-}
-
-.banner {
+.commercial-video{
     clear: both;
-}
-
-a {
-    text-decoration: none;
-    color: var(--nord10);
-    font-weight: bold;
-}
-a:hover{
-    color: var(--nord9);
 }
 
 nav ul li {
@@ -81,16 +147,20 @@ nav ul li {
 }
 
 nav {
-    margin: 5em auto;
+    margin: 2em auto;
 }
+
 footer ul li{
     list-style: none;
     display: inline;
     padding: 0 5em;
 }
+
 footer ul{
     margin: 3em auto .5em auto;
 }
+
 .infos{
     text-align: center;
 }
+
