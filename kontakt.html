@@ -11,18 +11,22 @@
 </head>
 
 <body>
-    <div class="hero-bg">
+    <div id="hero-bg">
         <header>
-            <div>
-                <img src="img/logo.png" alt="logo" id="logo"></a>
-                <h1><b>Medical <span>Plus</span></b></h1>
+            <div class="top">
+                <div class="namelogo">
+                    <img src="img/logo.png" alt="logo" id="logo"></a>
+                    <h1><b>Medical <span>Plus</span></b></h1>
+                </div>
+
+                <div class="banner">
+                    <p>Der beste Schutz, wenn es um Ihre Gesundheit geht</p>
+                </div>
             </div>
 
-            <div class="banner">
-                <p>Der beste Schutz, wenn es um Ihre Gesundheit geht</p>
-            </div>
 
-            <nav>
+
+            <nav class="navbar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#whoweare">Über uns</a></li>
@@ -33,23 +37,32 @@
             </nav>
         </header>
     </div>
+
     <main>
-        <form>
-            <label for="konatkt_name">Name</label>
-            <input type="text" id="kontakt_name" placeholder="Name">
-            <label for="kontakt_email">E-Mail-Adresse</label>
-            <input type="text" id="kontakt_email" placeholder="E-Mail">
-            <label for="kontakt_subject">Betreff</label>
-            <select id="kontakt_subject">
-                <option> </option>
-                <option>Beratung</option>
-                <option>Preisanfrage</option>
-                <option>Beschwerde</option>
-                <option>Individueller Tarif</option>
-                <option>Anderer Betreff</option>
-            </select>
-            <label for="kontakt_message">Nachricht</label>
-            <input type="text" id="kontakt_message" placeholder="Nachricht">
+        <form class="kontakt-form">
+            <div class="field">
+                <label for="konakt_name">Name:</label>
+                <input type="text" id="kontakt_name" placeholder="Name">
+            </div>
+            <div class="field">
+                <label for="kontakt_email">E-Mail-Adresse:</label>
+                <input type="text" id="kontakt_email" placeholder="E-Mail">
+            </div>
+            <div class="field">
+                <label for="kontakt_subject">Betreff:</label>
+                <select id="kontakt_subject">
+                    <option> </option>
+                    <option>Beratung</option>
+                    <option>Preisanfrage</option>
+                    <option>Beschwerde</option>
+                    <option>Individueller Tarif</option>
+                    <option>Anderer Betreff</option>
+                </select>
+            </div>
+            <div class="field">
+                <label id="textarea-label" for="kontakt_message">Nachricht:</label>
+                <textarea id="kontakt_message"></textarea>
+            </div>
             <button id="kontakt_senden" type="send">Senden!</button>
         </form>
     </main>
