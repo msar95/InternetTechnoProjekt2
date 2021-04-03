@@ -50,8 +50,8 @@
             </div>
             <div class="field">
                 <label for="kontakt_subject">Betreff:</label>
-                <select id="kontakt_subject">
-                    <option> </option>
+                <select id="kontakt_subject" >
+                    <option></option>
                     <option>Beratung</option>
                     <option>Preisanfrage</option>
                     <option>Beschwerde</option>
@@ -61,33 +61,25 @@
             </div>
             <div class="field">
                 <label id="textarea-label" for="kontakt_message">Nachricht:</label>
-                <textarea id="kontakt_message"></textarea>
+                <textarea id="kontakt_message" maxlength="500"></textarea>
             </div>
             <button id="kontakt_senden" type="send">Senden!</button>
         </form>
     </main>
+    
     <footer>
         <section class="details">
-            <div class="row">
-                <div class="col1">
-                    <span id="icon" class="fa fa-map-marker"></span>
-                    <span>Europastraße 55, Business Park, </br>
-                        78467, Konstanz
-                    </span>
-                </div>
-
-                <div class="col2">
-                    <span id="icon" class="fa fa-phone"></span>
-                    <span>Telefon: 07931/ 48421730</span>
-                </div>
-
-                <div class="col3">
+            <ul>
+                <li><span id="icon" class="fa fa-map-marker"></span>Europastraße 55, Business Park,
+                    78467, Konstanz
+                </li>
+                <li><span id="icon" class="fa fa-phone"></span>
+                    Telefon: 07931/ 48421730</li>
+                <li>
                     <span id="icon" class="fa fa-envelope"></span>
-                    <span>info@medical-plus.com</span>
-                </div>
-            </div>
-
-
+                    <a href="mailto:info@medical-plus.com">Email Us</a>
+                </li>
+            </ul>
         </section>
 
         <section class="infos">
