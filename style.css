@@ -88,7 +88,7 @@ nav a:hover{
 
 .whoweare{
     box-shadow: 0.5em 0.5em 0.5em var(--nord7);
-    margin: 0.5em 4em;
+    margin: 3em 4em;
     border: solid var(--nord8)0.5px;
     padding: 0.5em 4em;
     border-radius: 2em;
@@ -136,8 +136,7 @@ ul {
 
 .leistungen{
     background-color: #eceff4;
-    border-radius: 1em;
-    
+    margin-top:5em;
 }
 
 .leistungen h2{
@@ -145,43 +144,83 @@ ul {
     text-align: center;
     color: var(--nord10);
 }
-.leistung1{
+.leistungen h3{
+    color: var(--nord10);
+}
+.leistung{
     display: table;
-    padding: 0.5em 4em;
+    padding: 0.5em 4em 0 4em;
     box-sizing: border-box;
     border-bottom: var(--nord8) dotted 1em;
  }
 
-.leistung1 img {
+.leistungen img {
     box-shadow: 0.5em 0.5em 0.5em var(--nord10);
     float: left;
     text-align:center;
-    width: 45%;
+    width:30em;
     height: 20em;
-    margin: 1em 2em 1.5em 0;
+    margin: 1em 2em 3em 0;
     border-radius: 2em;
 }
-
-.leistung1 h3{
-    color: var(--nord10);
-}
-
-.leistung1 p{
+.leistungen p{
     float:left;
     width: 45%;
     margin-left: 1em;
     margin-top: 1em;
 }
-
-
-.commercial-video{
-    
+.leistung1{
+    display: table;
+    padding: 0.5em 4em 0 4em;
+    box-sizing: border-box;
 }
 
+/*Video-Section*/
+
+.commercial-video{
+    text-align: center;
+    background-color: var(--nord8);
+    padding: 3em 0 35em 0;
+}
+
+.calculator{
+    
+    position:absolute;
+    left:5em;
+    color: var(--nord10);
+}
+
+.commercial-video h4{
+    color: var(--nord10);
+    font-size: larger;
+}
+
+.video{
+    right:5em;
+    position:absolute;
+}
+
+.slider {
+    background: var(--nord11);
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  .slider:hover {
+    opacity: 1; 
+  }
+
+/*News-Form*/
+.news-dash{
+    clear:both;
+}
 
 /*Footer*/
 
 footer {
+    
     color: var(--nord11);
     background-color: var(--nord7);
     padding: 2em 2em 4em 2em;

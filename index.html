@@ -147,7 +147,7 @@
         <section class="leistungen" id="leistungen">
             
             <h2>Unsere Einzel-Versicherungen</h2>
-            <div class="leistung1">
+            <div class="leistung">
                 <h3>Chefarztbehandlung</h3>
                 <img src="img/Chefarztbehandlung.jpg" alt="Zeigt einen Chefarzt mit Patientin">
 
@@ -164,7 +164,7 @@
                 </p>
             </div>
             
-            <div class="leistung1">
+            <div class="leistung">
                 <h3>Krankentagegeldversicherung</h3>
                 <img src="img/Money.jpg" alt="Zeigt das Krankentagegeld mit einem Stethoskop">
 
@@ -183,9 +183,9 @@
                 </p>
             </div>
             
-            <div class="leistung1">
+            <div class="leistung">
                 <h3>Ambulante Zusatzversicherung</h3>
-                <img src="img/Handshake.jpg" alt="Zeigt einen Arzt der einer Patientin die Hand gibt">
+                <img src="img/Ambulant2.jpg" alt="Zeigt einen Arzt der einer Patientin die Hand gibt">
                 <p class="sectionU3">
                     Sind Sie es leid monatelang auf einen Termin beim Facharzt zu warten, während Privatpatienten oft
                     noch
@@ -203,9 +203,9 @@
                 </p>
             </div>
             
-            <div class="leistung1">
+            <div class="leistung">
                 <h3>Zahnzusatzversicherung</h3>
-                <img src="img/Smile.jpg" alt="Zeigt einen strahlenden glücklichen Patienten beim Zahnarzt">
+                <img src="img/Zahn-Replace.jpg" alt="Zeigt einen strahlenden glücklichen Patienten beim Zahnarzt">
                 <p class="sectionU4">
                     Ein strahlendes Lächeln ist das ultimative Symbol körperlicher Gesundheit und trägt gerade im hohen
                     Alter immens zu unserem
@@ -243,22 +243,63 @@
         </section>
 
         <section class="commercial-video">
-            <div class="container">
-                <div class="row">
-                    <div class="heading">
-                        <h3>Was ist eine Krankenzusatzversicherung?</h3>
-                        <h4>Ein Erklärfilm der DKV</h4>
+            <div class="heading">
+                <h3>Was bringt eine Krankenzusatzversicherung?</h3>      
+            </div>
+
+            <div class="calculator">
+                <h4>Berechnen Sie Ihren individuellen Tarif!</h4>
+                <p>Unverbindlich und diskret!</p>
+                <form class="calculator">
+                    <div class="field">
+                        <label for="calculator_name"></label>
+                        <input type="text" id="calculator_name" placeholder="Vor-und Nachname">
                     </div>
-                    <div class="left">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hSpHrMMlP0Q"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                    <div class="field">
+                        <label for="konakt_alter" >Alter: <span id="output"></span></label>
+                        <input type="range" min ="18" max="99" id="calculator_alter" class="slider" placeholder="Alter">
+                        
                     </div>
-                    <div class="right">
+
+                    <div class="field">
+                        <label for="calculator_versicherung">Versicherungsträger:</label>
+                        <div class="versicherug">
+                            <input type="checkbox" id="versicherungsart"><span>Gesetztlich</span>
+                            <input type="checkbox" id="versicherungsart"><span>Privat</span>
+                        </div>
+                        
 
                     </div>
-                </div>
+
+                    <div class="field">
+                        <label for="calculator_krankheit">Chronische Krankheiten:</label>
+                        <select id="calculator_krankheit" >
+                            <option></option>
+                            <option>x</option>
+                            <option>x</option>
+                            <option>x</option>
+                            <option>x</option>
+                            <option>x</option>
+                        </select>
+                    </div>
+                    
+                    <div class="field">
+                        <label for="kontakt_email">E-Mail-Adresse:</label>
+                        <input type="text" id="kontakt_email" placeholder="E-Mail">
+                    </div>
+                 
+
+                </form>
+
+            </div>
+
+            <div class="video">
+                <h4>Ein Erklärfilm der DKV</h4>
+                <iframe width="840" height="375" src="https://www.youtube.com/embed/hSpHrMMlP0Q"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+                </iframe>
             </div>
         </section>
     </main>
@@ -308,6 +349,16 @@
         </section>
 
     </footer>
+
+    <script>
+        var slider = document.getElementById("calculator_alter");
+        var output = document.getElementById("output");
+        output.innerHTML = slider.value;
+        slider.oninput = function() {
+        output.innerHTML = this.value;
+        }
+    </script>
+
 
 </body>
 
