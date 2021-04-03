@@ -15,6 +15,8 @@ body {
     padding:0;
 }
 
+/*Top*/
+
 #hero-bg{
     background: url(http://www.dtf-v.com/images/banner-health2.jpg);
     margin:0;
@@ -81,6 +83,9 @@ nav a:hover{
     font-family: 'Caveat', cursive;
 }
 
+
+/*Wer Wir Sind*/
+
 .whoweare{
     box-shadow: 0.5em 0.5em 0.5em var(--nord7);
     margin: 0.5em 4em;
@@ -95,6 +100,8 @@ nav a:hover{
     font-size: larger;
 }
 
+/*Überblick*/
+
 .Überblick{
     margin: 1.5em 0 0.5em 8em;
 }
@@ -102,9 +109,6 @@ nav a:hover{
 .Überblick h3{
     color: var(--nord10);
     font-size: larger;
-}
-hr{
-    float:left;
 }
 
 table ,td, th {
@@ -126,6 +130,8 @@ ul {
     margin-left: 1.5em;
     padding: 0em;
 }
+
+/*Leistungen*/
 
 .leistungen{
     background-color: #eceff4;
