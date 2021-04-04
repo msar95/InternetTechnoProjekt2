@@ -199,7 +199,7 @@ ul {
 }
 
 .news-dash img{
-    width: 45%;
+    width: 32em;
     height: auto;
     float: left;
     border-radius: 1em;
@@ -215,7 +215,6 @@ ul {
     display: block;
     margin: auto;
     font-size: large;
-    border-radius: 0.2em;
     margin-top: 1em;
     padding: 0.5em 1em;
     background-color: #5e81ac;
@@ -243,7 +242,6 @@ ul {
 .news-field input {
     width: 35.5em;
     padding: 0.4em;
-    border-radius: 0.2em;
 }
 
 /*Footer*/
@@ -294,7 +292,10 @@ footer a:hover{
 
 
 /*Kontakt Style*/
-
+input, select, textarea{
+    border: inset;
+    border-radius: 0.5em;
+}
 .kontakt-form{
     padding: 4em;
     background-color: #e5e9f0;
@@ -304,6 +305,7 @@ footer a:hover{
     display: block;
     margin-left: 15%;
     margin-right: auto;
+    margin-bottom: 1.5em;
 }
 .field label{
     display: inline-block;
@@ -314,20 +316,17 @@ footer a:hover{
 .field input {
     width: 35.5em;
     padding: 0.4em;
-    border-radius: 0.2em;
 }
 
 .field select{
     width: 36.5em;
     padding: 0.4em;
-    border-radius: 0.2em;
 }
 
 #kontakt_message{
-    width: 30em;
+    width: 36em;
     height: 20em;
     resize: none;
-    border-radius: 0.2em;
     font-family: inherit;
     vertical-align: top;
 }
