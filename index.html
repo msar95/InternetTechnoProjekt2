@@ -33,7 +33,7 @@
                     <li><a href="index.html#whoweare">Über uns</a></li>
                     <li><a href="index.html#leistungen">Leistungen</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
-                    <li><a href="#">Karriere</a></li>
+                    <li><a href="tarifrechner.html">Tarif-Rechner</a></li>
                 </ul>
             </nav>
         </header>
@@ -243,58 +243,14 @@
 
         <section class="commercial-video">
             <div class="heading">
-                <h3>Was bringt eine Krankenzusatzversicherung?</h3>
+                <h3>Was ist eine Krankenzusatzversicherung?</h3>
             </div>
 
-            <div class="calculator">
-                <h4>Berechnen Sie Ihren individuellen Tarif!</h4>
-                <p>Unverbindlich und diskret!</p>
-                <form class="calculator">
-                    <div class="field">
-                        <label for="calculator_name"></label>
-                        <input type="text" id="calculator_name" placeholder="Vor-und Nachname">
-                    </div>
-                    <div class="field">
-                        <label for="konakt_alter">Alter: <span id="output"></span></label>
-                        <input type="range" min="18" max="99" id="calculator_alter" class="slider" placeholder="Alter">
-
-                    </div>
-
-                    <div class="field">
-                        <label for="calculator_versicherung">Versicherungsträger:</label>
-                        <div class="versicherug">
-                            <input type="checkbox" id="versicherungsart"><span>Gesetztlich</span>
-                            <input type="checkbox" id="versicherungsart"><span>Privat</span>
-                        </div>
-
-
-                    </div>
-
-                    <div class="field">
-                        <label for="calculator_krankheit">Chronische Krankheiten:</label>
-                        <select id="calculator_krankheit">
-                            <option></option>
-                            <option>x</option>
-                            <option>x</option>
-                            <option>x</option>
-                            <option>x</option>
-                            <option>x</option>
-                        </select>
-                    </div>
-
-                    <div class="field">
-                        <label for="kontakt_email">E-Mail-Adresse:</label>
-                        <input type="text" id="kontakt_email" placeholder="E-Mail">
-                    </div>
-
-
-                </form>
-
-            </div>
+           
 
             <div class="video">
                 <h4>Ein Erklärfilm der DKV</h4>
-                <iframe width="840" height="375" src="https://www.youtube.com/embed/hSpHrMMlP0Q"
+                <iframe width="550" height="375" src="https://www.youtube.com/embed/hSpHrMMlP0Q"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
@@ -353,14 +309,7 @@
 
     </footer>
 
-    <script>
-        var slider = document.getElementById("calculator_alter");
-        var output = document.getElementById("output");
-        output.innerHTML = slider.value;
-        slider.oninput = function () {
-            output.innerHTML = this.value;
-        }
-    </script>
+
 
 
 </body>

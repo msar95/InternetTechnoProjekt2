@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Kontakt</title>
+    <title>Tarifrechner</title>
 </head>
-
 <body>
+    
+    
     <div id="hero-bg">
         <header>
             <div class="top">
@@ -38,35 +38,62 @@
         </header>
     </div>
 
-    <main>
+
+    <main class="rechner-main">
+    
+
+
         <form class="kontakt-form">
-            <div class="field">
-                <label for="konakt_name">Name:</label>
-                <input type="text" id="kontakt_name" placeholder="Name">
+            <div class="heading">
+                <h4>Berechnen Sie Ihren individuellen Tarif!</h4>
+                <p>Unverbindlich und diskret!</p>
             </div>
+            
+            <div class="field">
+                <label for="calculator_name">Name:</label>
+                <input type="text" id="calculator_name" placeholder="Vor-und Nachname">
+            </div>
+            <div class="field">
+                <label for="calculator_krankheit">Krankheiten:</label>
+                <select id="calculator_krankheit">
+                    <option>Bitte wählen Sie...</option>
+                    <option>Arthrose</option>
+                    <option>Bluthochdruck</option>
+                    <option>Rheuma</option>
+                    <option>Diabetes</option>
+                    <option>keine Angaben</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="calculator_alter">Alter: <span id="output"></span></label>
+                <input type="range" min="18" max="99" id="calculator_alter" class="slider" placeholder="Alter">
+            </div>
+            
+            <div class="field">
+                <label for="calculator_träger">Versicherungsträger:</label>
+            </div>
+            <field class="field">
+                <label for="calculator_träger">Gesetztlich</label>
+                <input type="checkbox" class="versicherungsart"><span class="versicherungsart"></span>
+            </field>
+            <field class="field">
+                <label for="calculator_träger">Privat</label>
+                <input type="checkbox" class="versicherungsart"><span class="versicherungsart"></span>
+            </field>
+
+           
+
             <div class="field">
                 <label for="kontakt_email">E-Mail-Adresse:</label>
                 <input type="text" id="kontakt_email" placeholder="E-Mail">
             </div>
-            <div class="field">
-                <label for="kontakt_subject">Betreff:</label>
-                <select id="kontakt_subject" >
-                    <option></option>
-                    <option>Beratung</option>
-                    <option>Preisanfrage</option>
-                    <option>Beschwerde</option>
-                    <option>Individueller Tarif</option>
-                    <option>Anderer Betreff</option>
-                </select>
-            </div>
-            <div class="field">
-                <label id="textarea-label" for="kontakt_message">Nachricht:</label>
-                <textarea id="kontakt_message" maxlength="500"></textarea>
-            </div>
+           
             <button id="kontakt_senden" type="send">Senden!</button>
         </form>
+        </div>
     </main>
-    
+
+
     <footer>
         <section class="details">
             <ul>
@@ -92,6 +119,14 @@
         </section>
 
     </footer>
-</body>
+    <script>
+        var slider = document.getElementById("calculator_alter");
+        var output = document.getElementById("output");
+        output.innerHTML = slider.value;
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+        }
+    </script>
 
+</body>
 </html>

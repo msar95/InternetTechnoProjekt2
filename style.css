@@ -179,36 +179,12 @@ ul {
 .commercial-video{
     text-align: center;
     background-color: var(--nord8);
-    padding: 3em 0 35em 0;
+    padding: 3em 0 5em 0;
 }
-
-.calculator{
-    position:absolute;
-    left:5em;
-    color: var(--nord10);
-}
-
 .commercial-video h4{
     color: var(--nord10);
     font-size: larger;
 }
-
-.video{
-    right:5em;
-    position:absolute;
-}
-
-.slider {
-    background: var(--nord11);
-    outline: none; 
-    opacity: 0.7; 
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-
-  .slider:hover {
-    opacity: 1; 
-  }
 
 /*News-Form*/
 .news-dash{
@@ -256,6 +232,7 @@ ul {
     margin-right: 2em;
     margin-right: auto;
     padding: 0.5em 2em 0.5em 3em;
+    border: none;
 }
 .news-field label{
     display: inline-block;
@@ -272,7 +249,6 @@ ul {
 /*Footer*/
 
 footer {
-    
     color: var(--nord11);
     background-color: var(--nord7);
     padding: 2em 2em 4em 2em;
@@ -373,6 +349,23 @@ footer a:hover{
 }
 
 
+/*Tarif-Rechner*/
+
+.rechner-main .heading{
+    text-align:center;
+    margin-bottom: 5em;
+}
+.slider {
+    background: var(--nord11);
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  .slider:hover {
+    opacity: 1; 
+  }
 
 
 
