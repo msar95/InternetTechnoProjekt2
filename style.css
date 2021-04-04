@@ -49,7 +49,6 @@ a {
 
 nav a:hover{
     color: var(--nord9);
-    font-size: larger;
 }
 
 .top{
@@ -287,8 +286,6 @@ footer a{
 
 footer a:hover{
     color: var(--nord10);
-    font-size: 110%;
-    position:relative;
 }
 
 .details ul {
