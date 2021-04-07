@@ -176,6 +176,10 @@ ul {
 
 /*Video-Section*/
 
+iframe{
+    border:none;
+}
+
 .commercial-video{
     text-align: center;
     background-color: var(--nord8);
