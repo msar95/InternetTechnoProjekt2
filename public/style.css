@@ -18,7 +18,7 @@ body {
 /*Top*/
 
 #hero-bg{
-    background: url(http://www.dtf-v.com/images/banner-health2.jpg);
+    background: url(/public/img/banner.jpg);
     margin:0;
     padding:0;
 }
