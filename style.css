@@ -176,6 +176,10 @@ ul {
 
 /*Video-Section*/
 
+iframe{
+    border:none;
+}
+
 .commercial-video{
     text-align: center;
     background-color: var(--nord8);
@@ -191,7 +195,7 @@ ul {
     clear:both;
     background-color: #e5e9f0;
     display: block;
-    padding: 3em;
+    padding: 3em 3em 10em 3em;
 }
 
 .form-container{
@@ -349,6 +353,9 @@ input, select, textarea{
 
 
 /*Tarif-Rechner*/
+
+
+
 
 .rechner-main .heading{
     text-align:center;
