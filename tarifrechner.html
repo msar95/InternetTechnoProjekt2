@@ -15,7 +15,7 @@
         <header>
             <div class="top">
                 <div class="namelogo">
-                    <img src="img/logo.png" alt="logo" id="logo"></a>
+                    <img src="img/logo.png" alt="logo" id="logo">
                     <h1><b>Medical <span>Plus</span></b></h1>
                 </div>
 
@@ -64,46 +64,47 @@
                     <option>keine Angaben</option>
                 </select>
             </div>
+
             <div class="field">
                 <label for="calculator_alter">Alter: <span id="output"></span></label>
-                <input type="range" min="18" max="99" id="calculator_alter" class="slider" placeholder="Alter">
+                <input type="range" min="18" max="99" id="calculator_alter" class="slider">
             </div>
             
             <div class="field">
-                <label for="calculator_träger">Versicherungsträger:</label>
+                <p>Versicherungsträger:</p>
             </div>
-            <field class="field">
-                <label for="calculator_träger">Gesetztlich</label>
-                <input type="checkbox" class="versicherungsart"><span class="versicherungsart"></span>
-            </field>
-            <field class="field">
-                <label for="calculator_träger">Privat</label>
-                <input type="checkbox" class="versicherungsart"><span class="versicherungsart"></span>
-            </field>
 
-           
+            <div class="field">
+                <label for="calculator_träger_gesetzlich">Gesetztlich</label>
+                <input type="checkbox" id="calculator_träger_gesetzlich"><span class="versicherungsart"></span>
+            </div>
+
+            <div class="field">
+                <label for="calculator_träger_privat">Privat</label>
+                <input type="checkbox" id="calculator_träger_privat"><span class="versicherungsart"></span>
+            </div>
 
             <div class="field">
                 <label for="kontakt_email">E-Mail-Adresse:</label>
                 <input type="text" id="kontakt_email" placeholder="E-Mail">
             </div>
            
-            <button id="kontakt_senden" type="send">Senden!</button>
+            <button id="kontakt_senden">Senden!</button>
         </form>
-        </div>
+       
     </main>
 
 
     <footer>
         <section class="details">
             <ul>
-                <li><span id="icon" class="fa fa-map-marker"></span>Europastraße 55, Business Park,
+                <li><span  class="fa fa-map-marker"></span>Europastraße 55, Business Park,
                     78467, Konstanz
                 </li>
-                <li><span id="icon" class="fa fa-phone"></span>
+                <li><span  class="fa fa-phone"></span>
                     Telefon: 07931/ 48421730</li>
                 <li>
-                    <span id="icon" class="fa fa-envelope"></span>
+                    <span  class="fa fa-envelope"></span>
                     <a href="mailto:info@medical-plus.com">Email Us</a>
                 </li>
             </ul>
@@ -112,9 +113,9 @@
         <section class="infos">
             <p>© All rights reserved - AndreasAndMarius.</p>
             <ul>
-                <li><a href="http://twitter.com" class="fa fa-twitter" alt="Twitter"></a></li>
-                <li><a href="http://facebook.com" class="fa fa-facebook" alt="FaceBook"></a></li>
-                <li><a href="http://github.com" class="fa fa-github" alt="GitHub"></a></li>
+                <li><a href="http://twitter.com" class="fa fa-twitter"></a></li>
+                <li><a href="http://facebook.com" class="fa fa-facebook"></a></li>
+                <li><a href="http://github.com" class="fa fa-github"></a></li>
             </ul>
         </section>
 
